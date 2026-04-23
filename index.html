@@ -16,15 +16,15 @@
         </nav>
     </header>
 
-    <hr> <main>
-        
+    <hr> 
+    <main>
         <section id="inicio">
             <h2>Una innovadora IA promete cambiarlo todo</h2>
             
             <p>
                 La herramienta <strong>WebCreaAI</strong> ha sido lanzada al mercado. <br> 
                 Promete que el desarrollo será <i>mucho más sencillo</i>.
-                </p>
+            </p>
 
             <img src="imagen-ia.jpg" alt="Un robot futurista trabajando en desarrollo web">
         </section>
@@ -32,14 +32,31 @@
         <aside>
             <h3>Dato interesante</h3>
             <p><b>El 70%</b> de los sitios web todavía no están optimizados.</p>
-            </aside>
-
+        </aside>
     </main>
 
     <footer>
         <p>¿Qué opinas sobre esta nueva IA para el desarrollo web?</p>
-        <button type="button">¡Déjanos tu comentario!</button>
-    </footer>
+        
+        <form action="#" method="POST">
+            <div>
+                <label for="nombre">Tu Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required placeholder="Ej: Juan Pérez">
+            </div>
+            <br>
+            <div>
+                <label for="email">Tu Correo (Opcional):</label><br>
+                <input type="email" id="email" name="email" placeholder="ejemplo@correo.com">
+            </div>
+            <br>
+            <div>
+                <label for="comentario">Tu Comentario:</label><br>
+                <textarea id="comentario" name="comentario" rows="4" required placeholder="Escribe tu opinión aquí..."></textarea>
+            </div>
+            <br>
+            <button type="submit">¡Enviar comentario!</button>
+        </form>
+        </footer>
 
 </body>
 </html>
